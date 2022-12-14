@@ -2,7 +2,7 @@ import Config
 
 # Configure your database
 config :slumber, Slumber.Repo,
-  username: "postgres",
+  username: "slumber",
   password: "postgres",
   hostname: "localhost",
   database: "slumber_dev",

@@ -24,7 +24,11 @@ defmodule Slumber.Umbrella.MixProject do
   # Dependencies listed here are available only for this project
   # and cannot be accessed from applications inside the apps/ folder.
   defp deps do
-    []
+    [
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:mix_audit, "~> 2.0", only: [:dev, :test], runtime: false}
+    ]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
